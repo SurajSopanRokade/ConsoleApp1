@@ -8,6 +8,7 @@ namespace ConsoleApp1
 {
     public class assignment1
     {
+        //hii
         public void calculate(int r)
         {
             float pi = 3.14F;
