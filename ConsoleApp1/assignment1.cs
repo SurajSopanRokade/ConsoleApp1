@@ -50,6 +50,7 @@ namespace ConsoleApp1
         {
             AreaTri a1 = new AreaTri();
             a1.cal(4, 6);
+            
         }
     }
 
