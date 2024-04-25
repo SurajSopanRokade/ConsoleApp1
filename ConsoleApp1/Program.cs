@@ -232,3 +232,466 @@ foreach (int item in arr1)
 {
     Console.WriteLine(item);
 }*/
+
+/*using ConsoleApp1;
+
+        Product3[] products = new Product3[]{
+            new Product3("Visual Studio", "Integrated development environment (IDE) from Microsoft", 499, ".NET Development"),
+            new Product3("SQL Server", "Relational database management system from Microsoft", 999, "Database"),
+            new Product3("Azure DevOps", "Cloud-based services for collaboration on software development projects", 789, "Development Tools"),
+            new Product3("ASP.NET Core", "Cross-platform, high-performance, open-source framework for building modern, cloud-based, Internet-connected applications", 0, "Web Development"),
+            new Product3("Entity Framework Core", "Object-relational mapping framework from Microsoft", 0, "Data Access")
+        };
+
+
+for (int i = 0; i < products.Length; i++)
+{
+    Console.WriteLine("Product " + (i + 1) + ":");
+    Console.WriteLine("Name: " + products[i].name);
+    Console.WriteLine("Description: " + products[i].description);
+    Console.WriteLine("Price: $" + products[i].price);
+    Console.WriteLine("Category: " + products[i].category);
+    Console.WriteLine("------------------------");
+}*/
+
+
+/*int[] arr1 = new int[] { 80, 45, 12, 78, 1 };
+int[] arr2 = new int[3];
+
+Console.WriteLine("Before sort");
+foreach (int i in arr1)
+{
+    Console.WriteLine(i);
+}
+Console.WriteLine("After sort");
+Array.Sort(arr1);
+foreach (int i in arr1)
+{
+    Console.WriteLine(i);
+}
+Console.WriteLine("After reverse");
+Array.Reverse(arr1);
+foreach (int i in arr1)
+{
+    Console.WriteLine(i);
+}
+// copy the 3 elements 45,12,1 in the new array
+
+Array.Copy(arr1, 2, arr2, 0, 3);
+
+Console.WriteLine("Copied elements:");
+foreach (int i in arr2)
+{
+    Console.WriteLine(i);
+}
+
+Array.Clear(arr1);
+Console.WriteLine("After clear");
+foreach (int i in arr1)
+{
+    Console.WriteLine(i);
+}
+
+Console.WriteLine("_________________________________________________________________________");
+string[] arr3 = new string[] { "suraj", "amit", "yogesh", "abhishek"};
+string[] arr4 = new string[3];
+
+Console.WriteLine("Before sort");
+foreach (string i in arr3)
+{
+    Console.WriteLine(i);
+}
+Console.WriteLine("After sort");
+Array.Sort(arr3);
+foreach (string i in arr3)
+{
+    Console.WriteLine(i);
+}
+Console.WriteLine("After reverse");
+Array.Reverse(arr3);
+foreach (string i in arr3)
+{
+    Console.WriteLine(i);
+}
+// copy the 3 elements 45,12,1 in the new array
+
+Array.Copy(arr3, 1, arr4, 0, 3);
+
+Console.WriteLine("Copied elements:");
+foreach (string i in arr4)
+{
+    Console.WriteLine(i);
+}
+
+Array.Clear(arr1);
+Console.WriteLine("After clear");
+foreach (int i in arr1)
+{
+    Console.WriteLine(i);
+}*/
+
+//2d array
+//maintain data in row and column format
+// eg. Matrix
+//syntax           row, column
+/*int[,] arr = new int[3, 4];
+int[,] arr2 = new int[3, 4]
+{
+    {1,2,3,4 },
+    {10,20,30,40 },
+    {100,200,300,400 }
+};
+
+arr2[2, 3] = 4000;
+
+// nested for loop
+
+for (int i = 0; i < arr2.GetLength(0); i++)
+{
+    for (int j = 0; j < arr2.GetLength(1); j++)
+    {
+        Console.Write($"arr2[{i},{j}] ---> {arr2[i,j]}  ");
+    }
+    Console.WriteLine();
+}
+Console.WriteLine("Using for each");
+foreach (int i in arr2)
+{
+    Console.WriteLine(i);
+}
+// code to addition of 3 by 3 matrix
+//accept data from user
+int[,] arr1 = new int[3, 3];
+int[,] arr3 = new int[3, 3];
+int[,] sum = new int[3, 3];
+
+
+Console.WriteLine("Enter elements for arr1");
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        Console.Write($"Enter element [{i}, {j}]: ");
+        arr1[i, j] = Convert.ToInt32(Console.ReadLine());
+    }
+}
+
+
+Console.WriteLine("Enter elements for arr3");
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        Console.Write($"Enter element [{i}, {j}]: ");
+        arr3[i, j] = Convert.ToInt32(Console.ReadLine());
+    }
+}
+
+
+Console.WriteLine("Sum : ");
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        sum[i, j] = arr1[i, j] + arr3[i, j];
+        Console.Write(sum[i, j]);
+    }
+    Console.WriteLine();
+}*/
+
+//Jagged Array
+//It is called as an array of arrays in c#
+// we can keep row size fixed 
+
+
+//syntax
+using ConsoleApp1;
+using System.Collections;
+using System.Text;
+
+/*int[][] arr = new int[4][];  // rows are fixed 
+
+arr[0] = new int[] { 1, 2, 3, 4, 5 };  //0th row has 5 columns
+arr[1] = new int[] {10,20,30};
+arr[2] = new int[] { 100, 200};
+arr[3] = new int[] { 1000 };
+
+//row
+for (int i = 0; i < arr.Length; i++)  // arr.length return size of row
+{
+    for(int j = 0; j < arr[i].Length; j++)   // col
+    {
+        Console.Write($"{arr[i][j]}"+"\t");
+    }
+    Console.WriteLine();
+}
+
+Console.WriteLine("____________________________For each loop_______________________________");
+foreach (int[] item in arr)
+{
+    foreach (int i in item)
+    {
+        Console.Write($"{i}"+"\t");
+    }
+    Console.WriteLine();
+}*/
+
+//String
+//a. Collection of characters
+//b. It is immutable
+//c. String is a reference type in c#
+//d. IsEmptyOrNull(), concat(), charAt(), tocharArry(), toUpper(), toLower(), indexOf(), LastindexOf()
+//substring(), contains(), split(), trim(), Replace(), remove(), clear(), capacity(), length
+
+/*string str = "Hello to all";
+// need to convert string to tochararray
+char[] c=str.ToCharArray();
+//split --> string to string[] using condition
+string[] result = str.Split(' ');
+//result[0]="hello"
+//result[1]="to"
+//result[2]="all"
+Console.WriteLine("Split string array");
+foreach (string r in result)
+{
+    Console.WriteLine(r);
+}
+Console.WriteLine("Character array");
+foreach (char r1 in c)
+{
+    Console.WriteLine(r1);
+}
+if (string.IsNullOrEmpty(str))
+{
+    Console.WriteLine("String is empty or null");
+}
+else
+{
+    Console.WriteLine("String is not null");
+}*/
+
+//String builder
+//a. It is a mutable class
+//b. Not thread safe
+//c.performance is slow
+//d.String builder always alocate more memory
+
+/*StringBuilder sb= new StringBuilder();
+sb.Append("Hello");
+sb.Clear();
+
+// hw  Understand difference between lenght and capcity
+
+Console.WriteLine("Capacity : "+sb.Capacity);
+Console.WriteLine("Length : "+sb.Length);*/
+
+//Collections in c#
+//Why we need collections
+//1. when size is unknown that time we cannot use an array
+//
+
+
+//Collections
+//Collections
+
+/*When we want to process / mange objects dynamically (run time) we will use collections
+
+
+
+
+
+
+                                 Collections
+
+
+Non Generic Collection → when we want to manage different types of objects or elements we will use non generic collections
+Dissimilar type of data
+		
+			Classes
+ArrayList
+Stack
+Queue
+Hashtable
+ 
+
+                        Interfaces
+IEnumerable
+IEnumerator
+IComparable
+ICompareotr
+IList
+ICollection
+
+
+
+Boxing
+Unboxing
+*/
+
+//ArrayList
+/*using System.Collections;*/
+/*int[] arr = new int[] { 1, 2, 3 };
+ArrayList list = new ArrayList();*/ // u can also set default value of arraylist
+//methods of arraylist
+
+/*list.Add(10);
+list.Add(20.3);
+list.Add("Hello");
+list.Add(new Product { ID = 1, Name = "pen", price = 10 });*/
+
+/*list.Add(10);
+list.Add(20);
+list.Add(30);
+list.AddRange(arr);
+Console.WriteLine("_________________________________________________________");
+foreach (int i in list)
+{
+    Console.WriteLine(i);
+}*/
+
+/*list.RemoveAt(2);  // remove element based on index
+list.Remove(10);  // remove based on object / element present in the collection
+Console.WriteLine("_________________________________________________________");
+foreach (int i in list)
+{
+    Console.WriteLine(i);
+}
+
+list.RemoveRange(1, 3);  // remove multiple values from collection
+Console.WriteLine("_________________________________________________________");
+foreach (int i in list)
+{
+    Console.WriteLine(i);
+}
+list.Clear(); //remove all the elements*/
+
+/*list.Sort();  //asc
+list.Reverse();  //desc
+Console.WriteLine("_________________________________________________________");
+foreach (int i in list)
+{
+    Console.WriteLine(i);
+}
+Console.WriteLine($"Total elements in list = {list.Count}"); */ // length of list we use .count
+
+//Stack
+//LIFO -->Last in first out
+//Push()--> add stack
+//pop--> remove from stack
+//count -->to get total count of elements
+//peek()--->select top element of stack
+
+/*Stack stack = new Stack();
+stack.Push(1);
+stack.Push(2);
+stack.Push(3);
+
+//to remove top element
+stack.Pop();
+
+Console.WriteLine(stack.Peek());
+
+foreach (int i in stack)
+{
+    Console.WriteLine(i);
+}
+*/
+
+/*Person p1 = new Person();
+try
+{
+    p1.acceptAge(17);
+}
+catch (AgeException ex) 
+{
+    Console.WriteLine(ex.Message);
+}
+catch (Exception ex) // we can handle it with Exception class because we passed it to base class
+{
+    Console.WriteLine(ex.Message);
+}*/
+
+//Accept name from user and check if name is null or empty raise an exception
+//message: name is required
+
+/*Person2 p = new Person2();
+try
+{
+    p.Accept("Suraj");
+}
+catch(NameException ex)
+{
+    Console.WriteLine(ex.Message);
+}*/
+
+//Delegates and events in c#
+//Delegates
+//a. It is reference type in c#
+//b. It is used to hold the method reference (address)
+//c. Delegets need to delcared in the namespace
+//d. syntax of delegate must match with szntax of method -> return type and parameters
+
+//hold method reference
+/*Calculator c= new Calculator();
+//create object of delegate and pass the method name to hold the address
+
+MyDelegate mydelegate = new MyDelegate(c.Add);
+int result = mydelegate.Invoke(20, 40);
+Console.WriteLine(result);*/
+
+//types of delegate
+//1. Singlecast delegate -> one delegate hold one method reference.
+//2. Multicast delegate -> one delegate holds multiple method references.
+//  a. method syntax & delegate syntax must be same
+
+/*mydelegate += new MyDelegate(c.Sub);
+
+int result2 = mydelegate.Invoke(20, 10);
+Console.WriteLine(result2);
+
+//Internally create invokation list and hold all method ref in sequence
+mydelegate += new MyDelegate(c.Mul);
+
+int result3 = mydelegate.Invoke(20, 10);
+Console.WriteLine(result3);
+//to get invokation list to retrive the methods from delegate
+Delegate[] list = mydelegate.GetInvocationList();
+foreach (Delegate item in list)
+{
+    Console.WriteLine(item.Method);
+    Console.WriteLine(item.DynamicInvoke(45, 35));
+}*/
+
+//Event
+//a. Actions raised by the user is called event in programming
+//b. Expamle click , change , hover etc ...
+//c. Event is a member of class/ interface
+//d. Event needs to bind with delegate
+
+//will create bank class
+//define some dafault balance
+// withdraw
+//event --> low balance
+//5000-->6000
+
+//class, delegate, event
+
+//1. event raise
+//2. notification to delegate
+//3. it call method and show msg
+
+/*Bank b = new Bank();
+MyMessage msg = new MyMessage();
+//if lowbalance event raised then call the myBankDelegate then delegate will call balance msg method
+b.LowBalance += new MyBankDelegate(msg.BalanceMsg);
+Console.WriteLine("Initial balance");
+Console.WriteLine(b);
+
+b.Withdraw(1000);
+Console.WriteLine("After withdraw 1000");
+Console.WriteLine(b);
+
+b.Withdraw(6000);
+Console.WriteLine("After withdraw 6000");
+Console.WriteLine(b);
+*/
