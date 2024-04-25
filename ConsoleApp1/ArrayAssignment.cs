@@ -293,7 +293,39 @@ namespace ConsoleApp1
             u.find(arr);
         }
     }
+    public class DuplicateEle2
+    {
+       // 9.	WAP to count frequency of each element in an array.
+        public void find(int[] arr)
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                int count = 0;
+                for (int j = 0; j < arr.Length; j++)
+                {
+                    if (arr[i] == arr[j] && i > j)
+                    {
+                        break;
+                    }
+                    else if (arr[i] == arr[j])
+                    {
+                        count++;
+                    }
+                }
+                if (count != 0)
+                {
+                    Console.WriteLine($"number {arr[i]} freq is {count}");
+                }
+            }
 
+        }
+        static void Main(string[] args)
+        {
+            DuplicateEle e = new DuplicateEle();
+            int[] arr = new int[] { 2, 3, 4, 4, 4, 5, 5, 2, 2, 2, 2, 2 };
+            e.find(arr);
+        }
+    }
     public class MergeTwo
     {
         //10.	WAP to merge 2 arrays to 3rd array. 3rd array should not have elements of same value.

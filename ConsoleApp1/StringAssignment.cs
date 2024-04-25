@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -531,5 +532,98 @@ namespace ConsoleApp1
         }
     }
 
+    public class EmailCheck
+    {
+        //20.	Accept email_id from user and check valid or not(should contain @,.)
+        public bool check(string email)
+        {
+            bool isValid = false;
+            
+            if (email.Contains('@') && email.Contains('.'))
+            {
+                
+                if (email.IndexOf('@') > 0 && email.LastIndexOf('@') < email.Length - 1)
+                {
+                    
+                    if (email.IndexOf('.') > email.IndexOf('@') + 1 && email.LastIndexOf('.') < email.Length - 1)
+                    {
+                        isValid = true;
+                    }
+                }
+            }
+            return isValid;
+        }
+        static void Main(string[] args)
+        {
+            EmailCheck r = new EmailCheck();
+            bool a = r.check("suraj@gmail.com");
+            if(a)
+            {
+                Console.WriteLine("Email is valid");
+            }
+            else
+            {
+                Console.WriteLine("Not valid");
+            }
+        }
+    }
+    
+    public class Change
+    {
+        //21.	Accept sentence replace each vowel by next consecutive character
+        public void check(string str)
+        {
+            char[] vowels = { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
+            char[] result = str.ToCharArray();
 
+            for (int i = 0; i < result.Length; i++)
+            {
+                char c = result[i];
+                if (Array.IndexOf(vowels, c) != -1)
+                {
+                    result[i] = (char)(c + 1);
+                    if (result[i] > 'z') 
+                        result[i] = 'a';
+                    else if (result[i] > 'Z' && result[i] < 'a') 
+                        result[i] = 'A';
+                }
+            }
+
+            Console.WriteLine(result);
+        }
+        static void Main(string[] args)
+        {
+            Change c = new Change();
+            c.check("Suraj");
+        }
+    }
+
+    public class SortArrayString 
+    {
+        //22.	Create an array of 10 names sort in descending order
+        static void Main(string[] args)
+        {
+            ArrayList list = new ArrayList();
+            list.Add("suraj");
+            list.Add("yogesh");
+            list.Add("sudarshan");
+            list.Add("aadersh");
+            list.Add("amit");
+            list.Add("amol");
+            list.Add("rakesh");
+            list.Add("sumit");
+
+            list.Sort();
+
+            foreach (string item in list)
+            {
+                Console.WriteLine(item);
+            }
+            
+        }
+    }
+
+    public
+
+    
 }
