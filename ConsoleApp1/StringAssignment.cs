@@ -113,7 +113,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             CountWords s = new CountWords();
-            s.CountTotal("Hello   I Love .Net and C#");
+            s.CountTotal("Hello  I Love .Net and C#");
         }
     }
 
@@ -623,7 +623,7 @@ namespace ConsoleApp1
         }
     }
 
-    public
+    
 
     
 }

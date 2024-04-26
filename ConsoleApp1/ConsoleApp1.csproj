@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>ConsoleApp1.SortArrayString</StartupObject>
+    <StartupObject>ConsoleApp1.Employee23</StartupObject>
   </PropertyGroup>
 
 </Project>
